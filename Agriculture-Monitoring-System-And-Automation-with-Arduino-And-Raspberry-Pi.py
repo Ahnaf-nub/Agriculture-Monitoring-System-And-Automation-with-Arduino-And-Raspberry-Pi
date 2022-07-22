@@ -21,8 +21,8 @@ channel_0 = AnalogIn(mcp, MCP.P1)
 spi = spidev.SpiDev()
 spi.open(0,0)
 bmp = BMP085.BMP085()
-ADAFRUIT_IO_KEY = 'aio_ujhl41jqb7sV7LOxoUf6u0XJXncz'
-ADAFRUIT_IO_USERNAME = 'Ahnaf12'
+ADAFRUIT_IO_KEY = ''
+ADAFRUIT_IO_USERNAME = ''
 aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 def _range(x, in_min, in_max, out_min, out_max):
     return int((x - in_min) * (out_max - out_min) / (in_max - in_min)+ out_min)
